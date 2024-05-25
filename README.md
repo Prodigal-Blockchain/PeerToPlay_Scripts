@@ -52,7 +52,7 @@
 1. Schedule a match by running the following command:
 
    ```sh
-   node schedulematch.js
+   node scheduleMatch.js
    ```
 
    Make sure to replace the following variables:
@@ -77,7 +77,7 @@
 
 ## Playing the Match
 
-1. To play the match, replace `instaAccountAccount` address and `EOAAddress` address. Only the owner can start the match. Run:
+1. To play the match, replace `instaAccountAccount` address and `EOAAddress` address. Run:
 
    ```sh
    node playMatch.js
