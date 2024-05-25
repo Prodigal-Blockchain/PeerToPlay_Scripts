@@ -1,0 +1,267 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "teamName",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "playerIds",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "createTeam",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "_eventName",
+        "type": "string"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_eventParam",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "name": "LogCreateTeam",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "name": "LogRegisterPlayer",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "LogScheduleMatch",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "LogpayMatchFee",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "LogplayMatch",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "matchId",
+        "type": "uint256"
+      }
+    ],
+    "name": "payMatchFee",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "_eventName",
+        "type": "string"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_eventParam",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "matchId",
+        "type": "uint256"
+      }
+    ],
+    "name": "playMatch",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "_eventName",
+        "type": "string"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_eventParam",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "playerName",
+        "type": "string"
+      }
+    ],
+    "name": "registerPlayer",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "_eventName",
+        "type": "string"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_eventParam",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "teamId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "location",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "fee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "startTime",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "matchType",
+        "type": "uint256"
+      }
+    ],
+    "name": "scheduleMatch",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "_eventName",
+        "type": "string"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_eventParam",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "name",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
